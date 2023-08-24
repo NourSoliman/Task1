@@ -1,0 +1,113 @@
+.plugins-container{
+    padding: 30px;
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+.plugin-box {
+    border: 3px solid gray;
+    padding: 12px;
+    max-width: 430px;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 55px;
+    border-radius: 10px;
+    font-family: var(--main-font);
+}
+.marketing{
+    margin-bottom: 2rem;
+    color: #002D62;
+}
+.description{
+    width: 80%;
+    line-height: 2rem;
+    margin-top: 50px;
+    color: gray;
+}
+.plugin-title {
+    color: #002D62;
+}
+.allowed {
+    margin-top: 8px;
+    color: #4BB543;
+}
+.blocked{
+    margin-top: 8px;
+    color:#8B0000;
+}
+.plugins-column{
+    padding: 0;
+}
+.marketing-colum{
+    padding: 0;
+}
+/* The switch - the box around the slider */
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#8B0000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4BB543;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4BB543;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .plugin-box.disabled {
+    opacity: 0.5; /* or any other style to visually indicate disabled state */
+    pointer-events: none; /* Disable interaction */
+  }
